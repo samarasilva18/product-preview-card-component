@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-solution-using-css-grid-and-flexbox-beS9954X7j)
 - Live Site URL: [Site](https://samarasilva18.github.io/product-preview-card-component/)
 
 ## My process
