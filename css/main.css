@@ -5,7 +5,7 @@
 }
 
 #product-image {
-    content:url(/images/image-product-mobile.jpg);
+    content: url('images/image-product-mobile.jpg');
 }
 body {
     background-color: hsl(30, 38%, 92%);
@@ -102,7 +102,7 @@ main .container {
     }
 
     #product-image {
-        content:url(/images/image-product-desktop.jpg);
+        content: url('images/image-product-desktop.jpg');
         max-height: 450px;
         border-radius: 8px 0 0 8px;
     }
