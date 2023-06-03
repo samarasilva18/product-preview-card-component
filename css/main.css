@@ -1,0 +1,141 @@
+:root{
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(228, 12%, 48%);
+    --color-green: hsl(158, 36%, 37%);
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-light-gray);
+}
+
+main {
+    background-color: var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    margin-top: 20px;
+}
+
+main img{
+    border-radius: 8px 8px 0 0;
+}
+
+main h1{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+main p {
+    color: var(--color-light-gray);
+    font-size: 14px;
+}
+
+main .number-container {  
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.number-container span {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 35px;
+    padding-right: 20px;
+    color: var(--color-green);
+}
+
+.number-container p {
+    text-decoration: line-through;
+}
+
+main button {
+    background: hsl(158, 36%, 37%);
+    color: var(--color-white);
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+}
+
+main button img {
+    margin-right: 10px;
+}
+
+main button:hover{
+    background: hsla(158, 36%, 17%);
+    cursor: pointer;
+}
+
+main .container {
+    padding: 25px;
+    padding-top: 10px;
+}
+
+.main-paragraph {
+    line-height: 25px;
+}
+
+.attribution{
+    margin-top: 20px;
+}
+
+@media (min-width: 800px) {
+    
+    body{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    #product-image {
+        content:url(/images/image-product-desktop.jpg);
+        max-height: 450px;
+        border-radius: 8px 0 0 8px;
+    }
+
+    main {
+        display: inline-grid;
+        margin: 0;
+    }
+
+    .small-paragraph {
+        margin-bottom: 20px;
+    }
+
+    main h1 {
+        margin-right: 20px;
+    }
+
+    main .container {
+        grid-column-start: 2;
+        grid-column-end: 2;
+        max-width: 250px;
+        padding: 35px;
+        padding-bottom: 0;
+        padding-top: 20px;
+    }
+
+    .main-paragraph{
+        margin-right: 20px;
+    }
+
+    main .number-container{
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+
+    main button {
+        margin-top: 15px;
+    }
+}
