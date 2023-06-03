@@ -4,6 +4,9 @@
     --color-green: hsl(158, 36%, 37%);
 }
 
+#product-image {
+    content:url(/images/image-product-mobile.jpg);
+}
 body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
