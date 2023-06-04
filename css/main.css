@@ -4,9 +4,6 @@
     --color-green: hsl(158, 36%, 37%);
 }
 
-#product-image {
-    content: url('images/image-product-mobile.jpg');
-}
 body {
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
@@ -15,40 +12,47 @@ body {
 
 main {
     background-color: var(--color-white);
-    border-radius: 8px;
+    border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
-    margin: 8px;
-    margin-top: 20px;
+    margin: 0.5rem;
+    margin-top: 1.3rem;
 }
 
-main img{
-    border-radius: 8px 8px 0 0;
+#product-image {
+    border-radius: 0.5rem 0.5rem 0 0;
+    max-width: 100%;
+    height: auto;
 }
 
 main h1{
     font-family: 'Fraunces', serif;
     font-weight: 700;
     color: hsl(212, 21%, 14%);
-    line-height: 30px;
-    margin-top: 10px;
+    line-height: 1.875rem;
+    margin-top: 0.6rem;
 }
 
 main p {
     color: var(--color-light-gray);
-    font-size: 14px;
+    font-size: 0.87rem;
+}
+
+.small-paragraph{
+    text-transform: uppercase;
+    letter-spacing: 0.31rem;
 }
 
 main .number-container {  
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 0.9rem;
 }
 
 .number-container span {
     font-family: 'Fraunces', serif;
     font-weight: 700;
-    font-size: 35px;
-    padding-right: 20px;
+    font-size: 2.18rem;
+    padding-right: 1.2rem;
     color: var(--color-green);
 }
 
@@ -59,17 +63,17 @@ main .number-container {
 main button {
     background: hsl(158, 36%, 37%);
     color: var(--color-white);
-    font-size: 14px;
+    font-size: 0.87rem;
     font-weight: 700;
     border: none;
     display: inline-block;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 0.6rem;
+    padding: 0.9rem;
     width: 100%;
 }
 
 main button img {
-    margin-right: 10px;
+    margin-right: 0.6rem;
 }
 
 main button:hover{
@@ -78,19 +82,19 @@ main button:hover{
 }
 
 main .container {
-    padding: 25px;
-    padding-top: 10px;
+    padding: 1.6rem;
+    padding-top: 0.6rem;
 }
 
 .main-paragraph {
-    line-height: 25px;
+    line-height: 1.6rem;
 }
 
 .attribution{
-    margin-top: 20px;
+    margin-top: 1.3rem;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     
     body{
         display: flex;
@@ -102,9 +106,12 @@ main .container {
     }
 
     #product-image {
-        content: url('images/image-product-desktop.jpg');
-        max-height: 450px;
-        border-radius: 8px 0 0 8px;
+        max-height: 28.12rem;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    main picture {
+        max-height: 28.12rem;
     }
 
     main {
@@ -113,32 +120,38 @@ main .container {
     }
 
     .small-paragraph {
-        margin-bottom: 20px;
+        margin-bottom: 1.3rem;
     }
 
     main h1 {
-        margin-right: 20px;
+        margin-right: 1.3rem;
     }
 
     main .container {
         grid-column-start: 2;
         grid-column-end: 2;
-        max-width: 250px;
-        padding: 35px;
+        max-width: 15.6rem;
+        padding: 2.18rem;
         padding-bottom: 0;
-        padding-top: 20px;
+        padding-top: 1.3rem;
     }
 
     .main-paragraph{
-        margin-right: 20px;
+        margin-right: 1.3rem;
     }
 
     main .number-container{
-        padding-bottom: 5px;
-        padding-top: 5px;
+        padding-bottom: 0.3rem;
+        padding-top: 0.3rem;
     }
 
     main button {
-        margin-top: 15px;
+        margin-top: 1rem;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        margin-bottom: 0.5rem;
     }
 }
